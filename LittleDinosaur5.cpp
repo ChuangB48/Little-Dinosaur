@@ -16,7 +16,7 @@ void record(){
         }
         cout << "\n";
     }
-    cout << "Speed:" << 30-speed << "\033[25;70HPerss esc to go back.";
+    cout << "Speed:" << 30-speed << "\033[25;70HPress esc to go back.";
     while(true){
         if(GetAsyncKeyState(0x1B)&0x8000){
             finish();
@@ -112,7 +112,7 @@ void screen(){
 void start();
 void rule(){
     system("cls");
-    cout << "\033[1mRULES\n\nUse space to jump to dodge obstacles.\nDodge as more obstacles as you can.\nAnd, LET'S GO!!!\033[25;70HPerss esc to go back.";
+    cout << "\033[1mRULES\n\nUse space to jump to dodge obstacles.\nDodge as more obstacles as you can.\nAnd, LET'S GO!!!\033[25;70HPress esc to go back.";
     while(true){
         if(GetAsyncKeyState(0x1B)&0x8000){
             start();
